@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 940px;
+}
+
+
+/*podział całości na lewą i prawą stronę?*/
+
+.leftside,
+.rightside {
+    height: 490px;
+    float: left;
+    background-color: black;
+}
+
+.leftside {
+    width: 780px;
+}
+
+.rightside {
+    width: 140px;
+    margin-left: 20px;
+}
+
+/*podział lewej strony na górę i dół*/
+
+.top,
+.bottom {
+    /*background-color: yellow;*/
+}
+
+.top {
+    height: 320px;
+}
+
+.bottom {
+    height:150px;
+    margin-top: 20px;
+}
+
+/*dodatkowe elementy dodające marginesy dla kolumn i wierszy*/
+.row-top-20 {
+    margin-top: 20px;
+    float: left;
+}
+
+.col-left-20 {
+    margin-left: 20px;
+    float: left;
+}
+
+
+/*określenie właściwości poszczególnych paneli*/
+
+.panel-140x150,
+.panel-300x150,
+.panel-300x320,
+.panel-140x320,
+.box {
+    background-color: pink;
+    float: left;
+    position: relative;
+
+}
+
+#panel-red-100x75,
+#panel-red-100x50 {
+    background-color: red;
+    position: absolute;
+}
+
+
+#panel-red-100x75 {
+    width: 100px;
+    height: 75px;
+    top: 0px;
+    right: 0px;
+}
+
+#panel-red-100x50 {
+    width: 100px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.panel-140x150 {
+    width:140px;
+    height:150px;
+}
+
+.panel-300x150 {
+    width:300px;
+    height:150px;
+}
+
+.panel-300x320,
+.box {
+    width:300px;
+    height:320px;
+}
+
+.panel-140x320 {
+    width:140px;
+    height:320px;
+}
+
+#panel-red-100x75 {
+    width:100px;
+    height:75px;
+}
+
+#panel-red-100x50 {
+    width:100px;
+    height:50px;
+}
+
+
+/*dodanie  czyszczenia floatów*/
+.clear {
+    clear: both;
+    display: block;
+}
