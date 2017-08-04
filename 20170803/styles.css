@@ -58,9 +58,15 @@
 .panel-140x150,
 .panel-300x150,
 .panel-300x320,
-.panel-140x320,
-.box {
+.panel-140x320 {
     background-color: pink;
+    float: left;
+    position: relative;
+
+}
+
+
+.box {
     float: left;
     position: relative;
 
