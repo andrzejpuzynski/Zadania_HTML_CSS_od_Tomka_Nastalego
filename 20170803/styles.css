@@ -2,80 +2,88 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 940px;
+.box {
+    width: 960px;
+    height:510px;
+    margin: -10px;
+    /*position: relative;*/
 }
 
-
-/*podział całości na lewą i prawą stronę?*/
-.leftside,
-.rightside {
-    height: 490px;
+.box_right,
+.box_left,
+.box_left_top,
+.box_left_bottom {
     float: left;
+    margin: 0px;
+    position: relative;
 }
 
-.leftside {
-    width: 780px;
+
+.box_left {
+    width: 800px;
 }
 
-.rightside {
+.box_right {
+    width: 160px;
+}
+
+
+.box__sm,
+.box__md--vertical,
+.box__md--horizontal,
+.box__lg,
+.box__2 {
+    float: left;
+    position: relative;
+}
+
+
+.box__sm,
+.box__md--vertical,
+.box__md--horizontal,
+.box__lg {
+    background-color: pink;
+    margin: 10px;
+}
+
+.box__sm {
     width: 140px;
-    margin-left: 20px;
+    height: 150px;
 }
 
-/*podział lewej strony na górę i dół*/
-.top {
+.box__md--horizontal {
+    width: 300px;
+    height: 150px;
+}
+
+.box__md--vertical {
+    width: 140px;
     height: 320px;
 }
 
-.bottom {
-    height:150px;
-    margin-top: 20px;
+.box__lg {
+    width: 300px;
+    height: 320px;
 }
 
-/*dodanie marginesów dla kolumn i wierszy*/
-.row-margin-top {
-    margin-top: 20px;
-    float: left;
+.box__2 {
+    margin: 0px;
 }
 
-.col-margin-left {
-    margin-left: 20px;
-    float: left;
-}
-
-
-/*określenie właściwości poszczególnych paneli*/
-.panel-11,
-.panel-21,
-.panel-22,
-.panel-12 {
-    background-color: pink;
-    float: left;
-    position: relative;
-}
-
-
-.box {
-    float: left;
-    position: relative;
-}
-
-#panel-red-1,
-#panel-red-2 {
+#box__red-1,
+#box__red-2 {
     background-color: red;
     position: absolute;
 }
 
-
-#panel-red-1 {
+#box__red-1 {
     width: 75px;
     height: 100px;
     top: 0px;
     right: 0px;
 }
 
-#panel-red-2 {
+#box__red-2 {
     width: 100px;
     height: 50px;
     top: 50%;
@@ -83,30 +91,8 @@
     transform: translate(-50%, -50%);
 }
 
-.panel-11 {
-    width:140px;
-    height:150px;
-}
-
-.panel-21 {
-    width:300px;
-    height:150px;
-}
-
-.panel-22,
-.box {
-    width:300px;
-    height:320px;
-}
-
-.panel-12 {
-    width:140px;
-    height:320px;
-}
-
-
 /*dodanie  czyszczenia floatów*/
-/*.clear {*/
-    /*clear: both;*/
-    /*display: block;*/
-/*}*/
+.clear {
+    clear: left;
+    display: block;
+}
