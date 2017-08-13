@@ -2,72 +2,29 @@
     box-sizing: border-box;
 }
 
-.box {
-    width: 960px;
-    height:510px;
-    margin: -10px;
-    /*position: relative;*/
-}
+.col-1 {width: 160px;}
+.col-2 {width: 320px;}
+.col-3 {width: 480px;}
+.col-4 {width: 640px;}
+.col-5 {width: 800px;}
+.col-6 {width: 960px;}
 
-.box_right,
-.box_left,
-.box_left_top,
-.box_left_bottom {
-    float: left;
-    margin: 0px;
-    position: relative;
-}
+.row-1 {height: 170px;}
+.row-2 {height: 340px;}
+.row-3 {height: 510px;}
 
-
-.box_left {
-    width: 800px;
-}
-
-.box_right {
-    width: 160px;
-}
-
-
-.box__sm,
-.box__md--vertical,
-.box__md--horizontal,
-.box__lg,
-.box__2 {
+[class*="col-"] {
     float: left;
     position: relative;
 }
 
+.main {
+    margin:-20px;
+}
 
-.box__sm,
-.box__md--vertical,
-.box__md--horizontal,
-.box__lg {
+.box_white {
     background-color: pink;
-    margin: 10px;
-}
-
-.box__sm {
-    width: 140px;
-    height: 150px;
-}
-
-.box__md--horizontal {
-    width: 300px;
-    height: 150px;
-}
-
-.box__md--vertical {
-    width: 140px;
-    height: 320px;
-}
-
-.box__lg {
-    width: 300px;
-    height: 320px;
-}
-
-.box__2 {
-    margin: 0px;
+    border: 10px solid white;
 }
 
 #box__red-1,
@@ -91,7 +48,6 @@
     transform: translate(-50%, -50%);
 }
 
-/*dodanie  czyszczenia floatów*/
 .clear {
     clear: left;
     display: block;
